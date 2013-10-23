@@ -1,0 +1,17 @@
+@mixin cross-browser($property, $value) {
+  -moz-#{$property}: $value;
+  -webkit-#{$property}: $value;
+  #{$property}: $value;
+}
+
+@mixin text-shadow($value: 0 1px 2px rgba(0, 0, 0, 0.5)) {
+  @include cross-browser(text-shadow, $value);
+}
+
+@mixin border-radius($pixels: 8px, $prefix: '') {
+  @if ($prefix == '') {
+    @include cross-browser(border-radius, $pixels);
+  } @else {
+    @include cross-browser(border-#{$prefix}-radius, $pixels);
+  }
+}

@@ -1,0 +1,39 @@
+.hero-wrapper {
+  @include text-shadow;
+  @include border-radius($prefix: top-left);
+  @include border-radius($prefix: top-right);
+  border: solid 1px #eee;
+  padding: 60px 180px;
+  background-image: url("http://recurly.com/img/pricing_hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+  color: white;
+}
+
+.hero-big {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-small {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.feature {
+  padding: 45px 0 45px 30px;
+}
+
+.feature-text {
+  padding: 25px 0;
+}
+
+.image-placeholder {
+  background-color: #fcfcfc;
+  border: solid 1px #ececec;
+  height: 220px;
+  width: 360px;
+}
