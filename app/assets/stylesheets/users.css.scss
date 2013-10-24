@@ -31,9 +31,44 @@
   padding: 25px 0;
 }
 
+.feature-image-collage {
+  position: relative;
+
+  img {
+    position: absolute;
+//    border-color: darken(#ececec, 15%) !important;
+  }
+
+  .oversized-attachment {
+    width: 65%;
+  }
+
+  .long-email-thread {
+    width: 75%;
+    left: 110px;
+    top: 90px;
+  }
+
+  .inbox-count {
+    width: 35%;
+    right: 45px;
+    top: 15px;
+  }
+}
+
+.feature-image img {
+  @include border-radius(5px);
+  border: solid 1px #ececec;
+  width: 360px;
+}
+
 .image-placeholder {
   background-color: #fcfcfc;
   border: solid 1px #ececec;
   height: 220px;
   width: 360px;
+}
+
+.get-early-access-wide {
+  padding: 90px 0 75px;
 }
