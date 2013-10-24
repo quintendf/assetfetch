@@ -3,6 +3,7 @@ AssetFetch::Application.routes.draw do
 
   get 'screens/followup'
   get 'screens/attachment'
+  get 'screens/template'
 
   root to: 'users#new'
 end
