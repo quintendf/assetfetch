@@ -3,11 +3,13 @@ class UsersController < ApplicationController
   end
 
   def create
+    user = User.create!(user_params)
+    redirect_to :root, notice: "Thanks for signing up! You'll hear from us shortly."
   end
 
   private
 
-  def users_params
+  def user_params
     params.require(:user).permit(:email)
   end
 end

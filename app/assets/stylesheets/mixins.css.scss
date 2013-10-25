@@ -8,6 +8,10 @@
   @include cross-browser(text-shadow, $value);
 }
 
+@mixin box-shadow($value: 1px 3px 5px rgba(0, 0, 0, 0.3)) {
+  @include cross-browser(box-shadow, $value);
+}
+
 @mixin border-radius($pixels: 8px, $prefix: '') {
   @if ($prefix == '') {
     @include cross-browser(border-radius, $pixels);
